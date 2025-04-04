@@ -13,7 +13,7 @@ export default function Chat() {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
-    const userMessage = { role: "user", content: input };
+    // const userMessage = { role: "user", content: input };
     setMessages((prev) => [...prev, { role: "user", content: input }]);
     setInput("");
     setIsLoading(true);
